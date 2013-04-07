@@ -49,6 +49,10 @@ ul{
 	display: inline-block;
 }
 
+.logo a{
+    text-decoration: none;
+}
+
 .login-btn{
 	font-size: 14px;
 	color: #666666;
@@ -211,6 +215,9 @@ ul{
 	font-size: 14px;
 }
 
+.submit-btn:hover{
+    opacity: 0.95S;
+}
 
 
 /**
