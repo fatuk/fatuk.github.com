@@ -6,7 +6,7 @@ body:before{
 }
 
 body{
-	background: url('../img/bg.png');
+
 }
 
 
@@ -37,7 +37,6 @@ ul{
 .container{
 	width: 900px;
 	margin: 0 auto;
-	height: 200px;
 }
 
 
@@ -92,6 +91,11 @@ ul{
 
 .last:after{
 	content: '' !important;
+}
+
+.blur-area{
+	background: url('../img/bg.png');
+	
 }
 
 
@@ -168,7 +172,7 @@ ul{
 	margin-left: -183px;
 	background: #fff;
 	padding: 65px 58px;
-	z-index: 1;
+	z-index: 4;
 
 	-webkit-box-shadow:  1px 1px 20px 10px #888;        
     box-shadow:  1px 1px 20px 10px #888;
@@ -223,6 +227,18 @@ ul{
 /**
 * Вспомогательные классы
 */
+
+.shade{
+	display: none;
+	background: #555;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	z-index: 1;
+}
+
 
 .left{
 	float: left;
