@@ -1,0 +1,180 @@
+span, p, h1, h2, h3, h4, h5, h6{
+		font-family: 'PT Sans', sans-serif;
+	}
+
+	a{
+		color: #003366;
+	}
+
+	a:hover{
+		text-decoration: none;
+		color: #333;
+	}
+
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo{
+		width: 300px;
+		float: left;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.logo a{
+   		text-decoration: none;
+   		color: #000;
+	}
+
+	.site-menu{
+		width: 600px;
+		float: left;
+	}
+
+	.user-menu{
+		width: 300px;
+		float: left;
+	}
+
+	.user-menu a{
+		text-align: right;
+		display: inline-block;
+		height: 20px;
+		text-decoration: none;
+		color: #666;
+		padding:5px;
+		border-radius: 15px;
+		border-top: solid 1px #f1f1f1;
+		border-bottom: solid 1px #bdbdbd;
+		background: #fefefe; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fefefe 0%, #dadada 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#dadada)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #fefefe 0%,#dadada 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #fefefe 0%,#dadada 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #fefefe 0%,#dadada 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #fefefe 0%,#dadada 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dadada',GradientType=0 ); /* IE6-9 */
+
+	}
+
+	.user-menu a:before{
+		content: url('../img/triangl.png') no-repeat;
+		margin-right: 5px;
+		margin-left: 10px;
+		margin-top: -5px;
+	}
+
+	.news-section{
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	.news-section p{
+		color: #333;
+		font-size: 15px;
+	}
+
+	.aside-news{
+		width: 180px;
+		margin-left: -300px;
+		position: absolute;
+		padding-right: 20px;
+		padding-left: 100px;
+	}
+
+	.aside-news p{
+		color: #666;
+		font-size: 12px;
+	}
+
+	.aside-rubrics{
+		width: 180px;
+		margin-left: -300px;
+		position: absolute;
+		padding-right: 20px;
+		padding-left: 100px;
+	}
+
+	.aside-rubrics p{
+		padding-right: 20px;
+		margin: 0;
+		color: #333;
+		font-size: 16px;
+		width: 180px;
+	}
+
+	.rubrics-section{
+		width: 600px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
+
+	.rubric{
+		width:180px;
+		margin-right: 17px;
+		display: inline-block;;
+	}
+
+	.rubric h3{
+		font-size: 14px;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.rubric img{
+		width: 180px;
+		height: 121px;
+	}
+
+	.rubric p{
+		margin: 0;
+		margin-top: 5px;
+		font-size: 12px;
+		color: #333;
+	}
+
+	.wraper{
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+
+
+	.news-menu li{
+		list-style: none;
+		float: left;
+		margin-right: 20px;
+	}
+
+	.news-menu .selected{
+		text-decoration: none;
+	}
+
+	.news-header{
+		font-size: 26px;
+		font-family: 'PT Serif', serif;
+		padding-top: 135px;
+		padding-bottom: 70px;
+	}
+
+	footer{
+		display: block;
+		color: #666;
+		font-size: 12px;
+		margin-left: 100px;
+		margin-right: 100px;
+		padding-top: 20px;
+		padding-bottom: 85px;
+		border-top: solid 1px #909090;
+	}
+
+
+	.clearfix:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
