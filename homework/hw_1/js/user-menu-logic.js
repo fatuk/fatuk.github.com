@@ -1,6 +1,7 @@
 function myToggle(selector){
 	if (selector === undefined) {
 		console.log("Вы не указали селектор");
+		return false;
 	}
 
 	var pure_selector = selector.substring(1, selector.length);
@@ -11,11 +12,14 @@ function myToggle(selector){
 	}else{
 		hide(selector);
 	}
+
+	return false;
 }
 
 function show(selector){
 	if (selector === undefined) {
 		console.log("Вы не указали селектор");
+		return false;
 	}
 
 	if (selector.charAt(0) == ".") {
@@ -34,6 +38,7 @@ function show(selector){
 function hide(selector){
 	if (selector === undefined) {
 		console.log("Вы не указали селектор");
+		return false;
 	}
 
 	if (selector.charAt(0) == ".") {
