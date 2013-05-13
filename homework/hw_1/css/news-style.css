@@ -57,7 +57,7 @@ span, p, h1, h2, h3, h4, h5, h6{
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dadada',GradientType=0 ); /* IE6-9 */
 
 	}
-
+	
 	.user-menu a:before{
 		content: url('../img/triangl.png') no-repeat;
 		margin-right: 5px;

@@ -3,16 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<link href='css/normalize.css' rel='stylesheet' type='text/css'>
-	<!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
-	<link href='css/news-style.css' rel='stylesheet' type='text/css'>
-	<title>Document</title>
+	<link rel="stylesheet/less" type="text/css" href="less/all.less">
+    <script src="js/less-1.3.3.min.js" type="text/javascript"></script>
+    <script src="js/user-menu-logic.js" type="text/javascript"></script>
+    <script>
+        less.watch();
+    </script>
+	<title>Google предложила пользователям завещать аккаунты на случай смерти</title>
 </head>
 
 <body>
-	<div class="wraper">
-		<header>
-			<div class="logo"><a href="">LOREM IPSUM NEWS</a></div>
-			<div class="site-menu">
+	<div class="main">
+		<header class="news-page-header clearfix">
+			<!-- Logo -->
+			<h1 class="logo"><a href="#">LOREM IPSUM NEWS</a></h1>
+			<!-- Site menu -->
+			<div class="news-page-menu clearfix">
 				 <nav class="news-menu">
 	                 <ul>
 	                     <li><a class="selected" href="#">Интернет</a></li>
@@ -22,66 +28,93 @@
 	                 </ul>
 	             </nav> 
 			</div>
-			<div class="user-menu">
-				<a href="#">Andrey Fatuk</a>
-			</div>
+			<!-- User menu -->
+				<nav class="user-menu-layout">
+					<a onclick=myToggle(".user-menu"); class="user-menu-btn" href="#">Andrew Fatuk</a>
+					<ul class="user-menu">
+						<li class="user-menu-item"><a href="#" class="user-menu-link">Профиль</a></li>
+						<li class="user-menu-item"><a href="#" class="user-menu-link">Сообщения</a></li>
+						<li class="user-menu-item"><a href="#" class="user-menu-link">Выход</a></li>
+					</ul>
+				</nav>
 		</header>
-		<section class="news-section">
-			<h2 class="news-header">
-				Google предложила пользователям завещать аккаунты на случай смерти
-			</h2>
-			<aside class="aside-news">
-				<img src="img/google-logo.png" alt="">
-				<p>
-					Поисковая система Google была создана в качестве учебного проекта студентов Стэнфордского университета Ларри Пейджа и Сергея Брина. Они в 1996 году работали над поисковой системой BackRub, а в 1998 году на её основе создали новую поисковую систему Google.
-				</p>
-			</aside>
-			<p>
-				Корпорация Google запустила функцию, позволяющую пользователям решить, что произойдет с их аккаунтами и данными после смерти. О нововедении сообщается в официальном <a href="#">блоге</a> компании.
-			</p>
-			<p>
-				В <a href="#">настройках</a> аккаунта пользователь сможет выбрать, какие данные (например, фото, контакты или видео из YouTube) перейдут под контроль доверенного лица. Google также может пересылать письма, поступающие на электронную почту пользователя, доверенному лицу или автоматически отвечать на них. Во втором случае текст письма должен ввести сам «завещатель».
-			</p>
-			<p>
-				При желании пользователь может указать, что все его данные должны быть удалены после смерти. При настройке функции он должен указать, через сколько месяцев (три, шесть, девять или двенадцать) нулевой активности корпорации следует считать его умершим. В любом случае, Google сначала попытается связаться с владельцем аккаунта по СМС и запасному адресу электронной почты, и только потом исполнит его волю.
-			</p>
-			<p>
-				Google — первая из крупных интернет-компаний, официально запустившая подобную функцию. Вместе с тем, в соцсети Facebook существуют специальные <a href="#">приложения</a>, созданные сторонними разработчиками, которые позволяют оставить посмертные сообщения друзьям. Для пользователей Twitter, в свою очередь, существует <a href="#">сервис</a>, который будет твитить от их лица после смерти.
-			</p>
-			
-		</section>
-		<section class="rubrics-section clearfix">
-			<aside class="aside-rubrics">
-				<p>
-					Другие материалы рубрики
-				</p>
-			</aside>
-			<article class="rubric">
-				<img src="img/rubrika-01.jpg" alt="">
-				<h3><a href="#">Охота на вимпа</a></h3>
-				<p>
-					Опубликованы первые результаты эксперимента по поиску темной материи на МКС
-				</p>
-			</article>
-			<article class="rubric">
-				<img src="img/rubrika-02.jpg" alt="">
-				<h3><a href="#">Охота на вимпа</a></h3>
-				<p>
-					Опубликованы первые результаты эксперимента по поиску темной материи на МКС
-				</p>
-			</article>
-			<article class="rubric">
-				<img src="img/rubrika-03.jpg" alt="">
-				<h3><a href="#">Охота на вимпа</a></h3>
-				<p>
-					Опубликованы первые результаты эксперимента по поиску темной материи на МКС
-				</p>
-			</article>
-			
-		</section>
 
-		<footer><a href="#">© ЗАО «Лорем ипсум ньюс»</a></footer>
+		<div class="content clearfix">
+			<section class="news-article-container">
+				<article class="news-article">
+					<header class="news-article-header">
+						<h2>Google предложила пользователям завещать аккаунты на случай смерти</h2>
+					</header>
+					<p class="news-text">
+						Корпорация Google запустила функцию, позволяющую пользователям решить, что произойдет с их аккаунтами и данными после смерти. О нововедении сообщается в официальном <a href="#">блоге</a> компании.
+					</p>
+					<p class="news-text">
+						В <a href="#">настройках</a> аккаунта пользователь сможет выбрать, какие данные (например, фото, контакты или видео из YouTube) перейдут под контроль доверенного лица. Google также может пересылать письма, поступающие на электронную почту пользователя, доверенному лицу или автоматически отвечать на них. Во втором случае текст письма должен ввести сам «завещатель».
+					</p>
+					<p class="news-text">
+						При желании пользователь может указать, что все его данные должны быть удалены после смерти. При настройке функции он должен указать, через сколько месяцев (три, шесть, девять или двенадцать) нулевой активности корпорации следует считать его умершим. В любом случае, Google сначала попытается связаться с владельцем аккаунта по СМС и запасному адресу электронной почты, и только потом исполнит его волю.
+					</p>
+					<p class="news-text">
+						Google — первая из крупных интернет-компаний, официально запустившая подобную функцию. Вместе с тем, в соцсети Facebook существуют специальные <a href="#">приложения</a>, созданные сторонними разработчиками, которые позволяют оставить посмертные сообщения друзьям. Для пользователей Twitter, в свою очередь, существует <a href="#">сервис</a>, который будет твитить от их лица после смерти.
+					</p>
+					<aside class="news-aside">
+						<header class="news-aside-header">
+							<img class="news-aside-img" src="img/google-logo.png" alt="Google logo">
+						</header>
+							<p class="news-aside-text">
+								Поисковая система Google была создана в качестве учебного проекта студентов Стэнфордского университета Ларри Пейджа и Сергея Брина. Они в 1996 году работали над поисковой системой BackRub, а в 1998 году на её основе создали новую поисковую систему Google.
+							</p>
+						
+					</aside>
+				</article>
+			</section>
+
+			<section class="rubrics">
+				<header class="clearfix">
+					<h3 class="rubric-header">Другие материалы рубрики</h3>
+				</header>
+				<ul>
+					<li class="rubric-item">
+						<img src="img/rubrika-01.jpg" alt="" class="rubric-img">
+						<header>
+							<h4 class="rubric-item-header">
+								<a href="#" class="rubric-link">Охота на вимпа</a>
+							</h4>
+						</header>
+						<p class="rubric-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, libero, corrupti, numquam, voluptate veritatis non itaque possimus rerum animi sit quisquam repellendus eaque quaerat quibusdam ipsa nam repellat rem accusamus?
+						</p>
+					</li>
+					<li class="rubric-item">
+						<img src="img/rubrika-02.jpg" alt="" class="rubric-img">
+						<header>
+							<h4 class="rubric-item-header">
+								<a href="#" class="rubric-link">Охота на вимпа</a>
+							</h4>
+						</header>
+						<p class="rubric-text">
+							Quasi, mollitia, sequi, a corporis doloribus deleniti in voluptatum adipisci ea commodi aliquam neque unde odio atque distinctio vitae voluptas impedit ut inventore velit molestias porro voluptatem? Iusto, fuga eius.
+						</p>
+					</li>
+					<li class="rubric-item">
+						<img src="img/rubrika-03.jpg" alt="" class="rubric-img">
+						<header>
+							<h4 class="rubric-item-header">
+								<a href="#" class="rubric-link">Охота на вимпа</a>
+							</h4>
+						</header>
+						<p class="rubric-text">
+							Quae, a, eius, maxime maiores nam aspernatur recusandae quam delectus nisi dolorem architecto reprehenderit dignissimos omnis officia modi doloribus dicta dolore quidem sequi debitis ipsum suscipit consequatur voluptates accusamus facilis.
+						</p>
+					</li>
+				</ul>
+			</section>
+			
+		</div>
+
+		<footer class="site-footer">
+            <span class="footer-text">&copy; ЗАО &laquo;Лорем ипсум ньюс&raquo;</span>
+        </footer>
 	</div>
-	
 </body>
 </html>
