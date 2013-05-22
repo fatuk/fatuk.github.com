@@ -1,0 +1,17 @@
+/**
+* Media 640px
+**/
+@media (max-width: 640px) {
+  .container {
+    width: 87.8125%;
+  }
+  .head {
+    margin: 0 auto;
+  }
+  .news-img {
+    width: 32.028469750889684% !important;
+    margin-left: 0;
+  }
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
