@@ -1,5 +1,43 @@
-h1{
-	color:red;
-	font-size: 30px;
-	background: grey;
+.content{
+	width: 800/1349*100%;
+	margin: 0 auto;
+	background: @vis4;
+
+	.news{
+		.news-img{
+			float: left;
+			margin-right: 20/800*100%;
+			width:178/800*100%;
+
+			img{
+				width: 100%;
+			}
+		}
+	}
 }
+
+@media (max-width: 940px) {
+	.news{
+		.news-header{
+			padding-top: 30px;
+		}
+		p{
+			clear: both;
+		}
+	}
+}
+
+
+
+
+
+
+//
+// Colors for debuging
+//
+@make-vis:green;
+@vis1:lighten(@make-vis, 10%);
+@vis2:lighten(@make-vis, 20%);
+@vis3:lighten(@make-vis, 30%);
+@vis4:lighten(@make-vis, 40%);
+@vis5:lighten(@make-vis, 50%);

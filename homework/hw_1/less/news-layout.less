@@ -19,16 +19,6 @@ p{
 	width: 800px;
 	margin: 0 auto;
 
-	.logo{
-		position: absolute;
-		left:65px;
-		float: left;
-
-		a{
-			color:@logo-color;
-		}
-	}
-
 /**
 * News main menu section
 **/
@@ -58,9 +48,8 @@ p{
 	.user-menu-layout{
 		position: absolute;
 		right:65px;
-		width: 117px;
+		width: 120px;
 		padding-left: 23px;
-		margin-left: 810px;
 		margin-top: 11px;
 		.border-radius(15px);
 		.background-image(linear-gradient(to bottom, #fff, lighten(#000, 85%)));
@@ -69,6 +58,7 @@ p{
 		border-bottom: 1px solid #bdbdbd;
 		border-left: 1px solid #dedede;
 		.box-shadow(~"1px 1px 5px #bcbcbc");
+		z-index: 999;
 
 		a{
 			font-size: @user-menu-size;
@@ -84,7 +74,8 @@ p{
 			margin-top: 5px;
 			margin-bottom: 5px;
 			text-decoration: none;	
-			text-shadow:#fff 1px 1px 0;		
+			text-shadow:#fff 1px 1px 0;	
+			width: 100px;	
 
 			&:before{
 				content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAMAAAB1GNVPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUUyMzdCNzVBNjY3MTFFMkFCQjI5RTNEQjEzNENGMTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUUyMzdCNzZBNjY3MTFFMkFCQjI5RTNEQjEzNENGMTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxRTIzN0I3M0E2NjcxMUUyQUJCMjlFM0RCMTM0Q0YxNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxRTIzN0I3NEE2NjcxMUUyQUJCMjlFM0RCMTM0Q0YxNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgNeMN4AAAAGUExURY+Pj////8yzuP4AAAACdFJOU/8A5bcwSgAAABdJREFUeNpiYIACRijJCGIwgmgwBggwAACQAA3KWolpAAAAAElFTkSuQmCC');
@@ -118,7 +109,7 @@ p{
 
 		.news-article-header{
 			h2{
-				font-size: @news-header-size;
+				font-size: @news-article-header-size;
 				font-family: @header-font;
 				margin-top: 100px;
 				margin-bottom: 70px;
