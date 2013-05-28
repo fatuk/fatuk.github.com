@@ -46,9 +46,12 @@ p{
 	}
 
 	.user-menu-layout{
+		.transition(height .5s ease-in);
 		position: absolute;
 		right:65px;
 		width: 120px;
+		height: 25px;
+		overflow: hidden;
 		padding-left: 23px;
 		margin-top: 11px;
 		.border-radius(15px);
@@ -60,13 +63,18 @@ p{
 		.box-shadow(~"1px 1px 5px #bcbcbc");
 		z-index: 999;
 
+		&:hover{
+			.transition(height .5s ease-out);
+			height: 115px;
+		}
+
 		a{
 			font-size: @user-menu-size;
 			color:@user-menu-color;
 		}
 
 		.user-menu{
-			display: none;
+			// display: none;
 		}
 
 		.user-menu-btn{
