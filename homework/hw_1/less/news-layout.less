@@ -144,6 +144,137 @@ p{
 	}
 }
 
+/**
+* News comments section
+**/
+
+.comments-container{
+	width: 600px;
+	background: #fff;
+	float: right;
+	margin-top: 40px;
+	border:solid 1px @hr-color;
+	padding: 25px;
+
+	.comments-header{
+		margin-bottom: 20px;
+		
+		.comments-header-text{
+			font-size: 18px;
+			font-weight: normal;
+		}
+	}
+
+	.add-comment-block-active{
+		display: block !important;
+	}
+
+	.add-comment-block{
+		margin-bottom: 15px;
+		display: none;
+	}
+
+	.add-comment-form{
+		input, textarea{
+			display: block;
+			font-size: 14px;
+			margin-bottom: 15px;
+			padding:3px;
+			box-sizing: border-box;
+		}
+		.user-name-input{
+			width: 240px;
+			padding:3px;
+		}
+
+		.comment-message-input{
+			width: 100%;
+			height: 50px;
+		}
+
+		.add-comment-btn{
+			padding: 5px 9px;
+			margin: 0;
+			float: right;
+			.border-radius(5px);
+			.background-image(linear-gradient(to bottom, #fff, lighten(#000, 85%)));
+			border-top: 1px solid #ebebeb;
+			border-right: 1px solid #b7b7b7;
+			border-bottom: 1px solid #bdbdbd;
+			border-left: 1px solid #dedede;
+
+			&:hover{
+				.background-image(linear-gradient(to bottom, darken(#fff, 2%), lighten(#000, 80%)));
+			}
+		}
+
+		.comments-error-message{
+			display: none;
+			color: #de2929;
+			font-size: 14px;
+
+			&:before{
+				display: inline-block;
+				color: #fff;
+				text-align: center;
+				width: 14px;
+				height: 14px;
+				margin-left: -18px;
+				margin-right: 3px;
+				content:'!';
+				.border-radius(15px);
+				background: #de2929;
+				font-weight: bold;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+/**
+* News comment item
+**/
+.comments-layout{
+	list-style: none;
+}
+
+.comment-item{
+	font-size: 14px;
+	margin-top: 15px;
+	border-bottom: solid 1px @hr-color;
+
+	&:last-child{
+		border-bottom:none;
+	}
+
+	.comment-item-header{		
+		margin-bottom: 10px;
+
+		.comment-user-name{
+			margin-right: 5px;
+		}
+
+		.comment-date{
+			color: @auth-link-color;
+		}
+	}
+
+	.comment-text{
+		margin-bottom: 10px;
+	}
+
+	.comment-answer-btn{
+		font-size: 13px;
+	}
+
+	.comment-footer{
+		padding-bottom: 15px;
+	}
+}
+
+.comment-reply{
+	margin-left: 50px;
+}
 
 /**
 * News rubrics section
@@ -151,7 +282,7 @@ p{
 .rubrics{
 	width: 600px;
 	float: right;
-	padding-top: 77px;
+	margin-top: 35px;
 
 	.rubric-header{
 		position: absolute;
