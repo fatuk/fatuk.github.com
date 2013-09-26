@@ -3,10 +3,13 @@ var glitch = {
 		vkApi.init();
 	},
 	make: function() {
-		$('.header').glitch({
+		$('.friends-block').glitch({
 			amount: 8,
 			complete: function(canvas) {
-				$('.header').html(canvas);
+				$('.friends-block').html(canvas);
+				var dataURL = canvas.toDataURL();
+				$('.friends-block').append('<img src=' + dataURL + '>');
+				console.log(dataURL);
 			}
 		}
 	)}

@@ -4,7 +4,7 @@
 			this.getData();
 			
 			VK.Auth.getLoginStatus(function(response){
-				if(response.session){
+				/*if(response.session){
 					$('#loginBtn').attr('disabled', true);
 					$('#getFriendsBtn').attr('disabled', false);
 					$('#glitchBtn').attr('disabled', true);
@@ -14,7 +14,7 @@
 					$('#getFriendsBtn').attr('disabled', true);
 					$('#glitchBtn').attr('disabled', true);
 					$('#logoutBtn').attr('disabled', true);
-				}
+				}*/
 			});
 		},
 		getData: function(){

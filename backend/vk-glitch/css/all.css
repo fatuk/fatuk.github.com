@@ -6103,6 +6103,9 @@ td.visible-print {
 .data-wrapper {
   min-height: 300px;
 }
+.data-wrapper .friends-block {
+  overflow: hidden;
+}
 .data-wrapper .friends-block .friend-avatar {
   width: 100%;
 }
