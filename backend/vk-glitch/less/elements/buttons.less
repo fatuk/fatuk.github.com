@@ -1,0 +1,30 @@
+.my-btn {
+	padding: 10px;
+	position: relative;
+	display: inline-block;
+	background: darken(orange, 20%);
+	color: #fff;
+	text-decoration: none;
+
+	&:hover {
+		color: yellow;
+		text-decoration: none;
+		background: green;
+
+		&:before {
+			background: green;
+			color: yellow;
+		}
+	}
+
+	&:before {
+		content: '$';
+		position: absolute;
+		width: 30px;
+		background: darken(orange, 20%);
+		padding: 10px;
+		top: 0;
+		left: -30px;
+		border-right: solid 1px #fff;
+	}
+}

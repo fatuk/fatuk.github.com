@@ -1,0 +1,29 @@
+.header {
+	&:extend(.jumbotron);
+}
+
+.data-wrapper {
+	&:extend(.row);
+	min-height: 300px;
+
+	.friends-block {
+		&:extend(.col-lg-12);
+
+		.friend-avatar {
+			&:extend(.img-thumbnail);
+			width: 100%;
+		}
+
+		.friends-list {
+			&:extend(.menu_h all);
+			&:extend(.clearfix all);
+
+			.friend-item {
+				&:extend(.col-lg-2, .col-md-3, .col-sm-4, .col-xs-6);
+				padding: 5px 0px;
+				height: 210px;
+				overflow: hidden;
+			}
+		}
+	}
+}
