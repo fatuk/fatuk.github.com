@@ -21,7 +21,7 @@ $(function() {
 			});
 			$('#glitchBtn').on('click', function(event) {
 				event.preventDefault();
-				glitch.make();
+				vkApi.glitch();
 			});
 		}
 	};

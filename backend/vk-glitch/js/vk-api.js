@@ -4,7 +4,7 @@
 			this.getData();
 			
 			VK.Auth.getLoginStatus(function(response){
-				/*if(response.session){
+				if(response.session){
 					$('#loginBtn').attr('disabled', true);
 					$('#getFriendsBtn').attr('disabled', false);
 					$('#glitchBtn').attr('disabled', true);
@@ -14,7 +14,7 @@
 					$('#getFriendsBtn').attr('disabled', true);
 					$('#glitchBtn').attr('disabled', true);
 					$('#logoutBtn').attr('disabled', true);
-				}*/
+				}
 			});
 		},
 		getData: function(){
@@ -29,11 +29,15 @@
 					vkApi.status = response.status;				
 					vkApi.uids = response.session.mid;
 					VK.Api.call('users.get', {
-						uids: response.session.mid
+						uids: response.session.mid,
+						fields: 'photo_big'
 					}, function(data){
 						vkApi.firstName = data.response[0].first_name;
 						vkApi.lastName = data.response[0].last_name;
+						vkApi.avatar = data.response[0].photo_big;
 						$('.info-block').find('.info').text("Привет, " + vkApi.firstName + ' ' + vkApi.lastName);
+						console.log(vkApi.avatar);
+						$('.current-user__img').attr('src', vkApi.avatar);
 						$('#loginBtn').attr('disabled', true);
 					});
 				});
@@ -73,10 +77,20 @@
 		    	$('#glitchBtn').attr('disabled', false);
 			});
 		},
+		glitch: function() {
+			var avatars = $('.friends-block').find('.friend-avatar');
+			for(i in avatars){
+				avatars[i].src =  'http://hitode909.appspot.com/glitch/api2?uri=' + avatars[i].src;
+			}
+			$('#glitchBtn').attr('disabled', true);
+		},
 		render: function(data){
 			$('.friends-block').text('');
+			var glitchServiceUrl = 'http://hitode909.appspot.com/glitch/api2?uri=';
 			for(i in data.response){
-				$('.friends-block').append('<li class="friend-item"><img class="friend-avatar" src="' + data.response[i].photo_big + '" alt="" ></li>');
+				var imgUrl = data.response[i].photo_big,
+					fullName = data.response[i].first_name + ' ' + data.response[i].last_name;
+				$('.friends-block').append('<li class="friend-item"><img title="' + fullName + '" class="friend-avatar" src="' + imgUrl + '" alt="" ></li>');
 			}
 			$('.friends-block').wrapInner('<ul class="friends-list">');
 		}

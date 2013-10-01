@@ -1,5 +1,6 @@
 .header {
 	&:extend(.jumbotron);
+	padding: 0;
 }
 
 .data-wrapper {
@@ -26,5 +27,17 @@
 				overflow: hidden;
 			}
 		}
+	}
+}
+
+.jumbotron {
+	&:extend(.clearfix all);
+
+	&__header {
+		&:extend(.col-lg-9);
+	}
+	
+	.current-user-avatar {
+		&:extend(.col-lg-3);
 	}
 }
