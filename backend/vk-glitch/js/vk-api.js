@@ -37,6 +37,7 @@
 						vkApi.avatar = data.response[0].photo_big;
 						$('.info-block').find('.info').text("Привет, " + vkApi.firstName + ' ' + vkApi.lastName);
 						console.log(vkApi.avatar);
+						$('.current-user-avatar').toggleClass('hide');
 						$('.current-user__img').attr('src', vkApi.avatar);
 						$('#loginBtn').attr('disabled', true);
 					});
@@ -65,6 +66,7 @@
 				$('#logoutBtn').attr('disabled', true);
 				$('#glitchBtn').attr('disabled', true);
 				$('.friends-block').text('');
+				$('.current-user-avatar').toggleClass('hide');
 			});
 
 		},
