@@ -1,0 +1,6 @@
+default:
+  - 'shell:bower_update'
+  - 'less'
+  - 'uglify'
+  - 'connect'
+  - 'watch'
