@@ -3,7 +3,7 @@
 		margin-bottom: 10px;
 	}
 	&__subtitle {
-		font-size: 16px;
+		.em(font-size, 16px);
 		margin: 0;
 		margin-bottom: 10px;
 	}
@@ -18,11 +18,15 @@
 	}
 	&__item {
 		.clearfix();
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	&__label {
 		float: left;
 		width: 60%;
-		font-size: 14px;
+		.em(font-size, 14px);
 		color: darken(@grey, 40%);
 	}
 	&__rating-list {

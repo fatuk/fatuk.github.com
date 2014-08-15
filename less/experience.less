@@ -20,13 +20,13 @@
 		float: left;
 		width: 30%;
 		color: @red;
-		font-size: 13px;
+		.em(font-size, 13px);
 		font-weight: bold;
 		padding-right: 20px;
 	}
 	&__company {
 		font-weight: bold;
-		font-size: 16px;
+		.em(font-size, 16px);
 		line-height: 1;
 		float: left;
 		color: #0A0A0A;
@@ -34,7 +34,7 @@
 	}
 	&__position {
 		float: right;
-		font-size: 14px;
+		.em(font-size, 14px);
 		color: darken(@grey, 10%);
 		width: 50%;
 		.condenced();
@@ -44,7 +44,7 @@
 		margin-top: 5px;
 		display: inline-block;
 		width: 100%;
-		font-size: 14px;
+		.em(font-size, 14px);
 		color: darken(@grey, 40%);
 	}
 }

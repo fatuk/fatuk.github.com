@@ -7,8 +7,15 @@ h1, h2, h3, h4, h5, h6 {
     .condenced();
 }
 
+a {
+    .transition(color .3s);
+    &:hover {
+        color: @red;
+    }
+}
+
 h1 {
-	font-size: 50px;
+    .em(font-size, 50px);
 	font-weight: bold;
 	color: @red;
     margin-top: 20px;
@@ -16,7 +23,7 @@ h1 {
 }
 
 h3 {
-	font-size: 20px;
+    .em(font-size, 20px);
 	color: @red;
     font-weight: normal;
     border-bottom: solid 2px #E6E6E6;

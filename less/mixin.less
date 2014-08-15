@@ -1,0 +1,11 @@
+// PX to EM
+// ex.: .em(font-size, 50px);
+@emInPx: 16;    // 16px per em (global default)
+.em(@selector, @amt) when (isem(@amt))
+{
+    @{selector}: @amt;
+}
+.em(@selector, @amt, @emInPx: @emInPx) when (ispixel(@amt))
+{
+    @{selector}: unit((@amt / @emInPx), em);
+}
