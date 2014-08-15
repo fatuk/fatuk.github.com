@@ -1,0 +1,43 @@
+.skills {
+	&__title {
+		margin-bottom: 10px;
+	}
+	&__subtitle {
+		font-size: 16px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	&__column {
+		float: left;
+		width: 50%;
+	}
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__item {
+		.clearfix();
+	}
+	&__label {
+		float: left;
+		width: 60%;
+		font-size: 14px;
+		color: darken(@grey, 40%);
+	}
+	&__rating-list {
+		float: left;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		.clearfix();
+	}
+	&__rating-item {
+		float: left;
+		color: @red;
+		margin-right: 3px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
