@@ -1,5 +1,4 @@
 default:
-  - 'shell:bower_update'
   - 'less'
   - 'autoprefixer'
   - 'uglify'

@@ -6,7 +6,7 @@ module.exports = {
         files: {
             'vendors/plugins.min.js': [
                 'bower_components/jquery/dist/jquery.js',
-                'bower_components/jquery-touchswipe/jquery.touchSwipe.js'
+                'bower_components/jquery.event.swipe/js/jquery.event.swipe.js'
             ]
         }
     }
