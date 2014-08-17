@@ -4,7 +4,7 @@ module.exports = {
     },
     less: {
         files: 'less/*.less',
-        tasks: ['less'],
+        tasks: ['less', 'autoprefixer'],
         options: {
             interrupt: true,
             livereload: false
