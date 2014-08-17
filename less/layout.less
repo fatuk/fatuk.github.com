@@ -6,10 +6,17 @@ body {
 	background: url('../img/diagonal-strip.png');
 }
 
+.wrapper {
+	overflow: hidden;
+}
+
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
 	background: #fff;
+	position: relative;
+	left: 0;
+	.transition(all .3s);
 	&__inner {
 		width: 90%;
 		margin: 0 auto;
@@ -20,6 +27,9 @@ body {
 		&_margin-top {
 			margin-top: 20px;
 		}
+	}
+	&.swiped {
+		left: 240px;
 	}
 	&_shadow {
 		.box-shadow(0px 0px 20px rgba(0,0,0,0.3));
