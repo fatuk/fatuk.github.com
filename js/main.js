@@ -2,6 +2,7 @@ $(function() {
 	var $pageContainer = $('.js-pageContainer'),
 		$body = $('body');
 
+	// Just swipe
 	if ($(document).width() <= 992) {
 		$pageContainer.on('swipeleft', function(e) {
 			$pageContainer.removeClass('swiped');
@@ -10,4 +11,7 @@ $(function() {
 			$pageContainer.addClass('swiped');
 		});
 	}
+
+	// WOW css animation init
+	new WOW().init();
 });

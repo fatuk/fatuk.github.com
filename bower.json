@@ -17,6 +17,8 @@
     "jquery": "1.11.1",
     "3l": "~1.4.4",
     "normalize-less": "*",
-    "jquery-mobile-events": "~1.4.0"
+    "jquery-mobile-events": "~1.4.0",
+    "WOW": "~1.0.1",
+    "animate.less": "*"
   }
 }
