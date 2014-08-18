@@ -17,6 +17,6 @@
     "jquery": "1.11.1",
     "3l": "~1.4.4",
     "normalize-less": "*",
-    "jquery.event.swipe": "~0.5.2"
+    "jquery-mobile-events": "~1.4.0"
   }
 }
