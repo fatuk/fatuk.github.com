@@ -13,5 +13,7 @@ $(function() {
 	}
 
 	// WOW css animation init
-	new WOW().init();
+	setTimeout(function() {
+		new WOW().init();
+	}, 200);
 });
